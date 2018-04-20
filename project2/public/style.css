@@ -1,0 +1,31 @@
+#mainCanvas{
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+#startB{
+    position: absolute;
+    left: 45%;
+    top: 30%;
+}
+#bgP{
+    width: auto;
+    height: 600px;
+    max-width: 800px;
+}
+button{
+    display:block;
+    margin: 10px;
+}
+button:hover{
+    background: lightgreen;
+}
+#textB{
+    border : 1px solid black;
+}
+h1{
+    position: absolute;
+    
+}
