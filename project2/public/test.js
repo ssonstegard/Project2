@@ -27,9 +27,9 @@ $("#startB").on("click", function(event){
     var img = document.getElementById("bgP");
     ctx.drawImage(img, 0, 0);
     var id = $('#startB').val();
-
-    $.get('/api/:adventure?', function(data){
-        console.log(data);
+    console.log(id)
+    $.get('/api/:id?', function(data){ //set :id? equal to the button value
+        console.log(data)
     })
 
 });

@@ -1,15 +1,18 @@
-var Adventure = require("../models/");
+var db = require("../models/");
 
 module.exports = function (app) {
     // Search for Specific Location (or all locations) then provides JSON
-    app.get("/api/:adventure?", function (req, res) {
+    app.get("/api/:id?", function (req, res) {
         // If the user provides a specific Location in the URL...
-        if (req.params.location) {
+        console.log(req.params.id);
+       
+        if (req.params.id) {
             // Then display the JSON for ONLY that Location.
             // (Note how we're using the ORM here to run our searches)
-            Location.findOne({
+            db.Adventure.findOne({
                 where: {
-                    routeName: req.params.locations
+                    id: req.params.id
+                    
                 }
             }).then(function (result) {
                 return res.json(result);
@@ -19,7 +22,7 @@ module.exports = function (app) {
             // Otherwise...
             // Otherwise display the data for all of the locations.
             // (Note how we're using Sequelize here to run our searches)
-            Location.findAll({}).then(function (result) {
+            db.Adventure.findAll({}).then(function (result) {
                 return res.json(result);
             });
         };

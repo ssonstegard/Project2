@@ -24,7 +24,7 @@ module.exports = function(sequelize, DataTypes) {
 
       route2: {
         type: DataTypes.INTEGER,
-        allowNull: false,
+        allowNull: true,
         validate: {
           len: [1]
         }
@@ -50,15 +50,7 @@ module.exports = function(sequelize, DataTypes) {
   
     
     
-    Adventure.associate = function(models) {
-      // We're saying that a Location should belong to an Player
-      // A Place can't be created without a Player due to the foreign key constraint
-      // Adventure.belongsTo(models.Player, {
-      //   foreignKey: {
-      //     allowNull: false
-      //   }
-      // });
-    };
+    Adventure.sync();
   
     return Adventure;
   };
