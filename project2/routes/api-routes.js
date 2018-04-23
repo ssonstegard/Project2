@@ -1,10 +1,10 @@
-var Location = require("../models/adventure.js");
+var Adventure = require("../models/");
 
 module.exports = function (app) {
     // Search for Specific Location (or all locations) then provides JSON
-    app.get("/api/:locations?", function (req, res) {
+    app.get("/api/:adventure?", function (req, res) {
         // If the user provides a specific Location in the URL...
-        if (req.params.locations) {
+        if (req.params.location) {
             // Then display the JSON for ONLY that Location.
             // (Note how we're using the ORM here to run our searches)
             Location.findOne({

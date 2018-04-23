@@ -27,9 +27,9 @@ $("#startB").on("click", function(event){
     var img = document.getElementById("bgP");
     ctx.drawImage(img, 0, 0);
     var id = $('#startB').val();
-    $.get('/api/:id?', function(data){
-        var route = data;
-        console.log(data)
+
+    $.get('/api/:adventure?', function(data){
+        console.log(data);
     })
 
 });
