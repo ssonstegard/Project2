@@ -26,25 +26,12 @@ $("#startB").on("click", function(event){
     var ctx = canvas.getContext("2d");
     var img = document.getElementById("bgP");
     ctx.drawImage(img, 0, 0);
-    $.ajax({
-        url:"../models/location.js",
-        method: 'GET'
-    }).then(function(data){
-        console.log(data);
+    var id = $('#startB').val();
+    $.get('/api/:id?', function(data){
+        var route = data;
+        console.log(data)
     })
 
-    $("#buttonQ").html(options[0][0]);
-    $("#buttonW").html(options[0][1]);
-    $("#buttonE").html(options[0][2]);
-    $("#opO").on("click", function(event){
-        town();
-    });
-    $("#opT").on("click", function(event){
-        townT();
-    });
-    $("#opH").on("click", function(event){
-        townY();
-    });
 });
 
 });
