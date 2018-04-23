@@ -28,8 +28,8 @@ $("#startB").on("click", function(event){
     ctx.drawImage(img, 0, 0);
     var id = $('#startB').val();
     console.log(id)
-    $.get('/api/:id?', function(data){ //set :id? equal to the button value
-        console.log(data)
+    $.get('/api/'+id, function(data){ //set :id? equal to the button value
+        console.log(data.route1)
     })
 
 });
