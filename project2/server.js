@@ -13,9 +13,9 @@ app.use(express.static("public"));
 app.get('/', function(req, res) {
     res.sendFile(path.join(__dirname + '/index.html'));
 });
-// app.get('/game', function(req, res){
-//     res.sendFile(path.join(__dirname + '/test.js'))
-// })
+app.get('/locations/:id', function(req, res){
+    res.sendFile(path.join(__dirname + '/test.js'))
+})
 
 app.listen(PORT, function(){
     console.log("on port: " + PORT);

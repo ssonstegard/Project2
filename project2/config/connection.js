@@ -9,7 +9,7 @@ else{
         user: 'root',
         port: 8889,
         password: 'root',
-        database:'placeholder'
+        database:'test_db'
     });
 };
 

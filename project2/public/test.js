@@ -7,19 +7,31 @@ window.onload = function() {
 };
 //ctx.clearRect(0, 0, canvas.width, canvas.height); clears canvas image
 var options = [
-    ["you are stuck somewhere so you should find a way out", "you are dead no way around it", "you are missing items go find it now"],
-    ["you are missing items still so go away", "something to show give it to me","blah blach blahc fhefbeufbei cejje j"],
-    ["fefeefefe 3thiwhi  teiien di3wdbiw bidbiewbi", "grhithirehfei ceichei hrh3ihr i3hri", "this ireurwi  vjf veonqodfeiqfdou wbfowenfoweb"]
+    ['Visit Mechanic', 'Visit Tavern', 'Visit Mayor', 'Go to Wasteland'],//area 1
+    ['Ask about acquiring a transport', 'Attempt to rob the mechanic'],//mech
+    ['Offer Mechanic booze to "look the other way', 'Pay'],//mech
+    ['Order Drink', 'Rob place', 'Approach passed out patron', 'Approach socializing bikers.'],//tavern
+    ['Inquire about transports', 'Tell bar story']//tavern
+    ['Inquire about Eden City papers', 'Inquire about coding job opportunities']//mayor
 ]
+
 $(document).ready(function(){
 
 $("#startB").on("click", function(event){
     event.preventDefault();
     $(this).hide();
+    $(this).val('1');
+    console.log($('#startB').val())
     var canvas = document.getElementById("mainCanvas");
     var ctx = canvas.getContext("2d");
-    var img = document.getElementById("bgO");
+    var img = document.getElementById("bgP");
     ctx.drawImage(img, 0, 0);
+    $.ajax({
+        url:"../models/location.js",
+        method: 'GET'
+    }).then(function(data){
+        console.log(data);
+    })
 
     $("#buttonQ").html(options[0][0]);
     $("#buttonW").html(options[0][1]);
@@ -34,81 +46,5 @@ $("#startB").on("click", function(event){
         townY();
     });
 });
-
-function town(){
-    var canvas = document.getElementById("mainCanvas");
-    var ctx = canvas.getContext("2d");
-    var img = document.getElementById("bgI");
-    ctx.drawImage(img, 0, 0);
-    $("#tb").html(arrText[2]);
-    $("#opO").on("click", function(event){
-        house();
-    });
-    $("#opT").on("click", function(event){
-        houseT();
-    });
-    $("#opH").on("click", function(event){
-        houseY();
-    });
-
-};
-
-function townT(){
-    var canvas = document.getElementById("mainCanvas");
-    var ctx = canvas.getContext("2d");
-    var img = document.getElementById("bgI");
-    ctx.drawImage(img, 0, 0);
-    $("#tb").html(arrText[3]);
-    $("#opO").on("click", function(event){
-        house();
-    });
-    $("#opT").on("click", function(event){
-        houseT();
-    });
-    $("#opH").on("click", function(event){
-        houseY();
-    });
-};
-
-function townY(){
-    var canvas = document.getElementById("mainCanvas");
-    var ctx = canvas.getContext("2d");
-    var img = document.getElementById("bgI");
-    ctx.drawImage(img, 0, 0);
-    $("#tb").html(arrText[4]);
-    $("#opO").on("click", function(event){
-        house();
-    });
-    $("#opT").on("click", function(event){
-        houseT();
-    });
-    $("#opH").on("click", function(event){
-        houseY();
-    });
-}
-
-function house(){
-    var canvas = document.getElementById("mainCanvas");
-    var ctx = canvas.getContext("2d");
-    var img = document.getElementById("bgP");
-    ctx.drawImage(img, 0, 0);
-    $("#tb").html(arrText[5]);
-}
-
-function houseT(){
-    var canvas = document.getElementById("mainCanvas");
-    var ctx = canvas.getContext("2d");
-    var img = document.getElementById("bgP");
-    ctx.drawImage(img, 0, 0);
-    $("#tb").html(arrText[6]);
-}
-
-function houseY(){
-    var canvas = document.getElementById("mainCanvas");
-    var ctx = canvas.getContext("2d");
-    var img = document.getElementById("bgP");
-    ctx.drawImage(img, 0, 0);
-    $("#tb").html(arrText[7]);
-}
 
 });
