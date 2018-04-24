@@ -68,7 +68,7 @@ var text = [
     ['You have your paperwork. Go on in'],//21
     ['You need paperworks to enter'],//22
     ['You attempt to drive through the blockade and gain entry to Eden City.  You crash into the gate and are shot multiple times'],//23
-    ['You made it to Eden. Good Job']
+    ['You made it to Eden. Good Job']//24
 
 ]
 
@@ -263,203 +263,203 @@ function change(){
         $('#buttonR').html(options[1][3]);
         break;
     case '3':
-        $('#cB').html(text[]);
+        $('#cB').html(text[2]);
         $('#buttonQ').html(options[2][0]);
         $('#buttonW').html(options[2][1]);
         $('#buttonE').html(options[2][2]);
         $('#buttonR').html(options[2][3]);
         break;
     case '4':
-        $('#cB').html(text[]);
+        $('#cB').html(text[3]);
         $('#buttonQ').html(options[3][0]);
         $('#buttonW').html(options[3][1]);
         $('#buttonE').html(options[3][2]);
         $('#buttonR').html(options[3][3]);
         break;
     case '5':
-        $('#cB').html(text[]);
+        $('#cB').html(text[4]);
         $('#buttonQ').html(options[4][0]);
         $('#buttonW').html(options[4][1]);
         $('#buttonE').html(options[4][2]);
         $('#buttonR').html(options[4][3]);
         break;
     case '6':
-        $('#cB').html(text[]);
+        $('#cB').html(text[8]);
         $('#buttonQ').html(options[5][0]);
         $('#buttonW').html(options[5][1]);
         $('#buttonE').html(options[5][2]);
         $('#buttonR').html(options[5][3]);
         break;
     case '7':
-        $('#cB').html(text[]);
+        $('#cB').html(text[5]);
         $('#buttonQ').html(options[6][0]);
         $('#buttonW').html(options[6][1]);
         $('#buttonE').html(options[6][2]);
         $('#buttonR').html(options[6][3]);
         break;
     case '8':
-        $('#cB').html(text[]);
+        $('#cB').html(text[6]);
         $('#buttonQ').html(options[6][0]);
         $('#buttonW').html(options[6][1]);
         $('#buttonE').html(options[6][2]);
         $('#buttonR').html(options[6][3]);
         break;
     case '9':
-        $('#cB').html(text[]);
+        $('#cB').html(text[5]);
         $('#buttonQ').html(options[24][0]);
         $('#buttonW').html(options[24][1]);
         $('#buttonE').html(options[24][2]);
         $('#buttonR').html(options[24][3]);
         break;
     case '10':
-        $('#cB').html(text[]);
+        $('#cB').html(text[5]);
         $('#buttonQ').html(options[24][0]);
         $('#buttonW').html(options[24][1]);
         $('#buttonE').html(options[24][2]);
         $('#buttonR').html(options[24][3]);
         break;
     case '11':
-        $('#cB').html(text[]);
+        //$('#cB').html(text[]);
         $('#buttonQ').html(options[7][0]);
         $('#buttonW').html(options[7][1]);
         $('#buttonE').html(options[7][2]);
         $('#buttonR').html(options[7][3]);
         break;
     case '12':
-        $('#cB').html(text[]);
+        $('#cB').html(text[8]);
         $('#buttonQ').html(options[5][0]);
         $('#buttonW').html(options[5][1]);
         $('#buttonE').html(options[5][2]);
         $('#buttonR').html(options[5][3]);
         break;
     case '13':
-        $('#cB').html(text[]);
+        //$('#cB').html(text[]);
         $('#buttonQ').html(options[8][0]);
         $('#buttonW').html(options[8][1]);
         $('#buttonE').html(options[8][2]);
         $('#buttonR').html(options[8][3]);
         break;
     case '14':
-        $('#cB').html(text[]);
+        $('#cB').html(text[10]);
         $('#buttonQ').html(options[9][0]);
         $('#buttonW').html(options[9][1]);
         $('#buttonE').html(options[9][2]);
         $('#buttonR').html(options[9][3]);
         break;
     case '15':
-        $('#cB').html(text[]);
+        $('#cB').html(text[11]);
         $('#buttonQ').html(options[10][0]);
         $('#buttonW').html(options[10][1]);
         $('#buttonE').html(options[10][2]);
         $('#buttonR').html(options[10][3]);
         break;
     case '16':
-        $('#cB').html(text[]);
+        $('#cB').html(text[12]);
         $('#buttonQ').html(options[12][0]);
         $('#buttonW').html(options[12][1]);
         $('#buttonE').html(options[12][2]);
         $('#buttonR').html(options[12][3]);
         break;
     case '17':
-        $('#cB').html(text[]);
+        $('#cB').html(text[9]);
         $('#buttonQ').html(options[5][0]);
         $('#buttonW').html(options[5][1]);
         $('#buttonE').html(options[5][2]);
         $('#buttonR').html(options[5][3]);
         break;
     case '18':
-        $('#cB').html(text[]);
+        $('#cB').html(text[13]);
         $('#buttonQ').html(options[3][0]);
         $('#buttonW').html(options[3][1]);
         $('#buttonE').html(options[3][2]);
         $('#buttonR').html(options[3][3]);
         break;
     case '19':
-        $('#cB').html(text[]);
+        $('#cB').html(text[14]);
         $('#buttonQ').html(options[11][0]);
         $('#buttonW').html(options[11][1]);
         $('#buttonE').html(options[11][2]);
         $('#buttonR').html(options[11][3]);
         break;
     case '20':
-        $('#cB').html(text[]);
+        $('#cB').html(text[15]);
         $('#buttonQ').html(options[25][0]);
         $('#buttonW').html(options[25][1]);
         $('#buttonE').html(options[25][2]);
         $('#buttonR').html(options[25][3]);
         break;
     case '21':
-        $('#cB').html(text[]);
+        //$('#cB').html(text[]);
         $('#buttonQ').html(options[12][0]);
         $('#buttonW').html(options[12][1]);
         $('#buttonE').html(options[12][2]);
         $('#buttonR').html(options[12][3]);
         break;
     case '22':
-        $('#cB').html(text[]);
+        $('#cB').html(text[15]);
         $('#buttonQ').html(options[5][0]);
         $('#buttonW').html(options[5][1]);
         $('#buttonE').html(options[5][2]);
         $('#buttonR').html(options[5][3]);
         break;
     case '23':
-        $('#cB').html(text[]);
+        //$('#cB').html(text[0]);
         $('#buttonQ').html(options[0][0]);
         $('#buttonW').html(options[0][1]);
         $('#buttonE').html(options[0][2]);
         $('#buttonR').html(options[0][3]);
         break;
     case '24':
-        $('#cB').html(text[]);
+        //$('#cB').html(text[0]);
         $('#buttonQ').html(options[0][0]);
         $('#buttonW').html(options[0][1]);
         $('#buttonE').html(options[0][2]);
         $('#buttonR').html(options[0][3]);
         break;
     case '25':
-        $('#cB').html(text[]);
+        $('#cB').html(text[0]);
         $('#buttonQ').html(options[13][0]);
         $('#buttonW').html(options[13][1]);
         $('#buttonE').html(options[13][2]);
         $('#buttonR').html(options[13][3]);
         break;
     case '26':
-        $('#cB').html(text[]);
+        $('#cB').html(text[12]);
         $('#buttonQ').html(options[10][0]);
         $('#buttonW').html(options[10][1]);
         $('#buttonE').html(options[10][2]);
         $('#buttonR').html(options[10][3]);
         break;
     case '27':
-        $('#cB').html(text[]);
+        $('#cB').html(text[12]);
         $('#buttonQ').html(options[10][0]);
         $('#buttonW').html(options[10][1]);
         $('#buttonE').html(options[10][2]);
         $('#buttonR').html(options[10][3]);
         break;
     case '28':
-        $('#cB').html(text[]);
+        //$('#cB').html(text[0]);
         $('#buttonQ').html(options[0][0]);
         $('#buttonW').html(options[0][1]);
         $('#buttonE').html(options[0][2]);
         $('#buttonR').html(options[0][3]);
         break;
     case '29':
-        $('#cB').html(text[]);
+        $('#cB').html(text[16]);
         $('#buttonQ').html(options[14][0]);
         $('#buttonW').html(options[14][1]);
         $('#buttonE').html(options[14][2]);
         $('#buttonR').html(options[14][3]);
         break;
     case '30':
-        $('#cB').html(text[]);
+        //$('#cB').html(text[]);
         $('#buttonQ').html(options[12][0]);
         $('#buttonW').html(options[12][1]);
         $('#buttonE').html(options[12][2]);
         $('#buttonR').html(options[12][3]);
         break;
     case '31':
-        $('#cB').html(text[]);
+        //$('#cB').html(text[]);
         $('#buttonQ').html(options[24][0]);
         $('#buttonW').html(options[24][1]);
         $('#buttonE').html(options[24][2]);
@@ -467,13 +467,13 @@ function change(){
         break;
     // case '32':
     //     $('#cB').html(text[]);
-    $('#buttonQ').html(options[0][0]);
+    //$('#buttonQ').html(options[0][0]);
     //     $('#buttonW').html(options[0][1]);
     //     $('#buttonE').html(options[0][2]);
     //     $('#buttonR').html(options[0][3]);
     //     break;
     case '33':
-        $('#cB').html(text[]);
+        $('#cB').html(text[17]);
         $('#buttonQ').html(options[15][0]);
         $('#buttonW').html(options[15][1]);
         $('#buttonE').html(options[15][2]);
