@@ -22,6 +22,35 @@ button{
 button:hover{
     background: lightgreen;
 }
+#buttonQ{
+    width: 45%;
+    font-size: 16px;
+    height: 40%;
+}
+#buttonW{
+    position: relative;
+    width:45%;
+    font-size: 16px;
+    height:40%;
+    left: 52%;
+    bottom: 46%;
+}
+#buttonE{
+    position:relative;
+    width:45%;
+    font-size: 16px;
+    height:40%;
+    bottom: 45%;
+}
+#buttonR{
+    position:relative;
+    width:45%;
+    font-size: 16px;
+    height:40%;
+    bottom: 91%;
+    left: 52%;
+}
+
 #textB{
     border : 1px solid black;
 }
