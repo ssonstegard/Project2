@@ -4,10 +4,10 @@ create database adventure_db;
 
 use adventure_db;
 
-CREATE TABLE Adventures (
+CREATE TABLE adventure (
   id INT NOT NULL AUTO_INCREMENT,
   place varchar(40),
-  image varchar (255),
+  image varchar (500),
   route1 int not null,
   route2 int,
   route3 int,

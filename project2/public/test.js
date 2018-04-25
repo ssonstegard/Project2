@@ -68,7 +68,8 @@ var text = [
     ['You have your paperwork. Go on in'],//21
     ['You need paperworks to enter'],//22
     ['You attempt to drive through the blockade and gain entry to Eden City.  You crash into the gate and are shot multiple times'],//23
-    ['You made it to Eden. Good Job']//24
+    ['You made it to Eden. Good Job'],//24
+    ['You enter the desolate Wasteland'],//25
 
 ]
 
@@ -76,7 +77,7 @@ $(document).ready(function(){
 
 $("#startB").on("click", function(event){
     event.preventDefault();
-    //$('#cB').html(text[]);
+    $('#cB').html(text[]);
     $('#buttonQ').show();
     $('#buttonW').show();
     $('#buttonE').show();
@@ -94,7 +95,7 @@ $("#startB").on("click", function(event){
     var id = $('#startB').val();
     console.log(id)
     $.get('/api/'+id, function(data){ //set :id? equal to the button value
-        //$('#cB').html(text[]);
+        $('#cB').html(text[]);
         $('#buttonQ').val(data.route1);
         $('#buttonW').val(data.route2);
         $('#buttonE').val(data.route3);
@@ -111,12 +112,13 @@ $("#startB").on("click", function(event){
         change();
     });
 //});
-//$('#cB').html(text[]);
+$('#cB').html(text[]);
 $('#buttonQ').on('click', function(event){
     event.preventDefault();
-    id = $('#buttonQ').val();
+    id = $('#cB').html(text[]);
+    $('#buttonQ').val();
     $.get('/api/'+id, function(data){
-        //$('#cB').html(text[]);
+        $('#cB').html(text[]);
         $('#buttonQ').val(data.route1);
         $('#buttonW').val(data.route2);
         $('#buttonE').val(data.route3);
@@ -149,7 +151,7 @@ $('#buttonW').on('click', function(event){
     event.preventDefault();
     id = $('#buttonW').val();
     $.get('/api/'+id, function(data){
-        //$('#cB').html(text[]);
+        $('#cB').html(text[]);
         $('#buttonQ').val(data.route1);
         $('#buttonW').val(data.route2);
         $('#buttonE').val(data.route3);
@@ -182,7 +184,7 @@ $('#buttonE').on('click', function(event){
     event.preventDefault();
     id = $('#buttonE').val();
     $.get('/api/'+id, function(data){
-        //$('#cB').html(text[]);
+        $('#cB').html(text[]);
         $('#buttonQ').val(data.route1);
         $('#buttonW').val(data.route2);
         $('#buttonE').val(data.route3);
@@ -215,7 +217,7 @@ $('#buttonR').on('click', function(event){
     event.preventDefault();
     id = $('#buttonR').val();
     $.get('/api/'+id, function(data){
-        //$('#cB').html(text[]);
+        $('#cB').html(text[]);
         $('#buttonQ').val(data.route1);
         $('#buttonW').val(data.route2);
         $('#buttonE').val(data.route3);
