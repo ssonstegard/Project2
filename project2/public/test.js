@@ -76,7 +76,7 @@ $(document).ready(function(){
 
 $("#startB").on("click", function(event){
     event.preventDefault();
-    $('#cB').html(text[]);
+    //$('#cB').html(text[]);
     $('#buttonQ').show();
     $('#buttonW').show();
     $('#buttonE').show();
@@ -94,7 +94,7 @@ $("#startB").on("click", function(event){
     var id = $('#startB').val();
     console.log(id)
     $.get('/api/'+id, function(data){ //set :id? equal to the button value
-        $('#cB').html(text[]);
+        //$('#cB').html(text[]);
         $('#buttonQ').val(data.route1);
         $('#buttonW').val(data.route2);
         $('#buttonE').val(data.route3);
@@ -111,13 +111,12 @@ $("#startB").on("click", function(event){
         change();
     });
 //});
-$('#cB').html(text[]);
+//$('#cB').html(text[]);
 $('#buttonQ').on('click', function(event){
     event.preventDefault();
-    id = $('#cB').html(text[]);
-    $('#buttonQ').val();
+    id = $('#buttonQ').val();
     $.get('/api/'+id, function(data){
-        $('#cB').html(text[]);
+        //$('#cB').html(text[]);
         $('#buttonQ').val(data.route1);
         $('#buttonW').val(data.route2);
         $('#buttonE').val(data.route3);
@@ -150,7 +149,7 @@ $('#buttonW').on('click', function(event){
     event.preventDefault();
     id = $('#buttonW').val();
     $.get('/api/'+id, function(data){
-        $('#cB').html(text[]);
+        //$('#cB').html(text[]);
         $('#buttonQ').val(data.route1);
         $('#buttonW').val(data.route2);
         $('#buttonE').val(data.route3);
@@ -183,7 +182,7 @@ $('#buttonE').on('click', function(event){
     event.preventDefault();
     id = $('#buttonE').val();
     $.get('/api/'+id, function(data){
-        $('#cB').html(text[]);
+        //$('#cB').html(text[]);
         $('#buttonQ').val(data.route1);
         $('#buttonW').val(data.route2);
         $('#buttonE').val(data.route3);
@@ -216,7 +215,7 @@ $('#buttonR').on('click', function(event){
     event.preventDefault();
     id = $('#buttonR').val();
     $.get('/api/'+id, function(data){
-        $('#cB').html(text[]);
+        //$('#cB').html(text[]);
         $('#buttonQ').val(data.route1);
         $('#buttonW').val(data.route2);
         $('#buttonE').val(data.route3);
@@ -480,105 +479,105 @@ function change(){
         $('#buttonR').html(options[15][3]);
         break;
     case '34':
-        $('#cB').html(text[]);
+        $('#cB').html(text[17]);
         $('#buttonQ').html(options[16][0]);
         $('#buttonW').html(options[16][1]);
         $('#buttonE').html(options[16][2]);
         $('#buttonR').html(options[16][3]);
         break;
     case '35':
-        $('#cB').html(text[]);
+        $('#cB').html(text[25]);
         $('#buttonQ').html(options[17][0]);
         $('#buttonW').html(options[17][1]);
         $('#buttonE').html(options[17][2]);
         $('#buttonR').html(options[17][3]);
         break;
     case '36':
-        $('#cB').html(text[]);
+        $('#cB').html(text[25]);
         $('#buttonQ').html(options[5][0]);
         $('#buttonW').html(options[5][1]);
         $('#buttonE').html(options[5][2]);
         $('#buttonR').html(options[5][3]);
         break;
     case '37':
-        $('#cB').html(text[]);
+        $('#cB').html(text[18]);
         $('#buttonQ').html(options[18][0]);
         $('#buttonW').html(options[18][1]);
         $('#buttonE').html(options[18][2]);
         $('#buttonR').html(options[18][3]);
         break;
     case '38':
-        $('#cB').html(text[]);
+        $('#cB').html(text[19]);
         $('#buttonQ').html(options[18][0]);
         $('#buttonW').html(options[18][1]);
         $('#buttonE').html(options[18][2]);
         $('#buttonR').html(options[18][3]);
         break;
     case '39':
-        $('#cB').html(text[]);
+        $('#cB').html(text[25]);
         $('#buttonQ').html(options[19][0]);
         $('#buttonW').html(options[19][1]);
         $('#buttonE').html(options[19][2]);
         $('#buttonR').html(options[19][3]);
         break;
     case '40':
-        $('#cB').html(text[]);
+        $('#cB').html(text[19]);
         $('#buttonQ').html(options[18][0]);
         $('#buttonW').html(options[18][1]);
         $('#buttonE').html(options[18][2]);
         $('#buttonR').html(options[18][3]);
         break;
     case '41':
-        $('#cB').html(text[]);
+        $('#cB').html(text[0]);
         $('#buttonQ').html(options[20][0]);
         $('#buttonW').html(options[20][1]);
         $('#buttonE').html(options[20][2]);
         $('#buttonR').html(options[20][3]);
         break;
     case '42':
-        $('#cB').html(text[]);
+        $('#cB').html(text[20]);
         $('#buttonQ').html(options[21][0]);
         $('#buttonW').html(options[21][1]);
         $('#buttonE').html(options[21][2]);
         $('#buttonR').html(options[21][3]);
         break;
     case '43':
-        $('#cB').html(text[]);
+        $('#cB').html(text[21]);
         $('#buttonQ').html(options[22][0]);
         $('#buttonW').html(options[22][1]);
         $('#buttonE').html(options[22][2]);
         $('#buttonR').html(options[22][3]);
         break;
     case '44':
-        $('#cB').html(text[]);
+        $('#cB').html(text[22]);
         $('#buttonQ').html(options[23][0]);
         $('#buttonW').html(options[23][1]);
         $('#buttonE').html(options[23][2]);
         $('#buttonR').html(options[23][3]);
         break;
     case '45':
-        $('#cB').html(text[]);
+        $('#cB').html(text[23]);
         $('#buttonQ').html(options[5][0]);
         $('#buttonW').html(options[5][1]);
         $('#buttonE').html(options[5][2]);
         $('#buttonR').html(options[5][3]);
         break;
     case '46':
-        $('#cB').html(text[]);
+        // $('#cB').html(text[]);
         $('#buttonQ').html(options[21][0]);
         $('#buttonW').html(options[21][1]);
         $('#buttonE').html(options[21][2]);
         $('#buttonR').html(options[21][3]);
         break;
     case '47':
-        $('#cB').html(text[]);
+        $('#cB').html(text[24]);
         $('#buttonQ').html(options[22][0]);
         $('#buttonW').html(options[22][1]);
         $('#buttonE').html(options[22][2]);
         $('#buttonR').html(options[22][3]);
         break;
     case '48':
-        $('#cB').html(text[]);
+        // $('#cB').html(text[]);
         $('#buttonQ').html(options[5][0]);
         $('#buttonW').html(options[5][1]);
         $('#buttonE').html(options[5][2]);
